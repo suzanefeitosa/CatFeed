@@ -3,6 +3,7 @@ import {Post} from './components/Post';
 import {Sidebar} from './components/Sidebar'
 import './global.css';
 import styles from './App.module.css';
+import { Content } from './components/Post';
 
 
 const posts = [
@@ -51,7 +52,7 @@ function App() {
     <Post 
     key={post.id}
     author={post.author}
-    content={post.content}
+    content={post.content as Content[]}
     publishedAt={post.publishedAt}
     />
     )

@@ -11,9 +11,9 @@ interface Author {
   avatarUrl: string; 
 }
 
-interface Content {
-  type: 'paragraph';
-  content : string; 
+export interface Content {
+  type: 'paragraph' | 'link';
+  content: string;
 }
 
 interface PostProps {
