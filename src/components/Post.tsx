@@ -12,7 +12,7 @@ interface Author {
 }
 
 interface Content {
-  type: 'paragraph' | 'link';
+  type: 'paragraph';
   content : string; 
 }
 
